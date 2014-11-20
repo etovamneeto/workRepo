@@ -1,0 +1,2072 @@
+
+LOG LOG\SIR_RES.log
+page @
+
+
+
+
+Epicure/AMFIT Version 1.3                                        November 22, 2013
+                                                                 0:02:19 am
+ 
+NAMES cyr age cases pyr rate@
+
+INPUT SIR.txt@
+
+Input from SIR.txt
+
+         229 records read         229 records used
+                                    0 records rejected
+
+7 variables are currently defined.
+At least 500 additional variables can be created.
+
+cases cases@
+pyr pyr@
+levels cyr@
+cyr has 21 levels from 1992 to 2012
+
+tran Expect=rate*pyr@
+
+
+
+
+!--------------1992----------------
+nomodel
+select cyr ==1992 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1992 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                209            11            0           78
+
+sum Expect@
+
+Using cyr ==1992 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            160.101            11     0.043986       50.533
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      27.0234
+             1     0      27.0234
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1992 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.865    < 0.001
+
+            Records used           11
+
+                Deviance      27.0234
+            Pearson Chi2      32.4917      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      27.0234
+             1     0      13.4124
+             2     0      13.4124
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1992 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.305      0.0903      14.46    < 0.001
+
+            Records used           11
+
+                Deviance      13.4124
+            Pearson Chi2      13.4492      Degrees of freedom      10
+
+
+lrt
+             LR statistic       13.61      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.305
+
+               97.5% lower bound       1.136
+               97.5% upper bound        1.49
+
+!----------------------------------
+
+
+!--------------1993----------------
+nomodel
+select cyr ==1993 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1993 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                240            11            0           73
+
+sum Expect@
+
+Using cyr ==1993 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            172.840            11    0.0089122       51.438
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      31.2475
+             1     0      31.2475
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1993 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       5.108    < 0.001
+
+            Records used           11
+
+                Deviance      31.2475
+            Pearson Chi2       38.765      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      31.2475
+             1     0      7.99692
+             2     0      7.99692
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1993 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.389     0.08963      15.49    < 0.001
+
+            Records used           11
+
+                Deviance      7.99692
+            Pearson Chi2      9.12388      Degrees of freedom      10
+
+
+lrt
+             LR statistic       23.25      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.389
+
+               97.5% lower bound        1.22
+               97.5% upper bound       1.572
+
+!----------------------------------
+
+
+!--------------1994----------------
+nomodel
+select cyr ==1994 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1994 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                239            11            0           91
+
+sum Expect@
+
+Using cyr ==1994 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            190.993            11    0.0022543       67.351
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      16.8555
+             1     0      16.8555
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1994 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.474    < 0.001
+
+            Records used           11
+
+                Deviance      16.8555
+            Pearson Chi2       18.523      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      16.8555
+             1     0      5.68925
+             2     0      5.68925
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1994 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.251     0.08094      15.46    < 0.001
+
+            Records used           11
+
+                Deviance      5.68925
+            Pearson Chi2      5.15956      Degrees of freedom      10
+
+
+lrt
+             LR statistic       11.17      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.251
+
+               97.5% lower bound       1.099
+               97.5% upper bound       1.417
+
+!----------------------------------
+
+
+!--------------1995----------------
+nomodel
+select cyr ==1995 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1995 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                261            11            0          101
+
+sum Expect@
+
+Using cyr ==1995 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            203.969            11   0.00065220       78.310
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      19.7167
+             1     0      19.7167
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1995 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.993    < 0.001
+
+            Records used           11
+
+                Deviance      19.7167
+            Pearson Chi2      23.7498      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      19.7167
+             1     0      5.07846
+             2     0      5.07846
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1995 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.280     0.07921      16.16    < 0.001
+
+            Records used           11
+
+                Deviance      5.07846
+            Pearson Chi2      6.09856      Degrees of freedom      10
+
+
+lrt
+             LR statistic       14.64      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE       1.28
+
+               97.5% lower bound       1.131
+               97.5% upper bound       1.441
+
+!----------------------------------
+
+
+!--------------1996----------------
+nomodel
+select cyr ==1996 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1996 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                295            11            0          115
+
+sum Expect@
+
+Using cyr ==1996 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            227.667            11     0.050000       87.691
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      33.7233
+             1     0      33.7233
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1996 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       4.462    < 0.001
+
+            Records used           11
+
+                Deviance      33.7233
+            Pearson Chi2       48.722      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      33.7233
+             1     0      15.5255
+             2     0      15.5255
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1996 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.296     0.07544      17.18    < 0.001
+
+            Records used           11
+
+                Deviance      15.5255
+            Pearson Chi2      22.2327      Degrees of freedom      10
+
+
+lrt
+             LR statistic       18.20      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.296
+
+               97.5% lower bound       1.153
+               97.5% upper bound       1.449
+
+!----------------------------------
+
+
+!--------------1997----------------
+nomodel
+select cyr ==1997 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1997 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                314            11            0          118
+
+sum Expect@
+
+Using cyr ==1997 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            244.560            11     0.070000       87.269
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      38.1728
+             1     0      38.1728
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1997 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed        4.44    < 0.001
+
+            Records used           11
+
+                Deviance      38.1728
+            Pearson Chi2      49.8175      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      38.1728
+             1     0      20.0956
+             2     0      20.0956
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1997 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.284     0.07246      17.72    < 0.001
+
+            Records used           11
+
+                Deviance      20.0956
+            Pearson Chi2      23.4444      Degrees of freedom      10
+
+
+lrt
+             LR statistic       18.08      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.284
+
+               97.5% lower bound       1.147
+               97.5% upper bound       1.431
+
+!----------------------------------
+
+
+!--------------1998----------------
+nomodel
+select cyr ==1998 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1998 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                280            11            0           90
+
+sum Expect@
+
+Using cyr ==1998 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            257.997            11     0.013892       84.609
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      15.9114
+             1     0      15.9114
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1998 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed        1.37     0.1707
+
+            Records used           11
+
+                Deviance      15.9114
+            Pearson Chi2      18.0123      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      15.9114
+             1     0      14.0862
+             2     0      14.0862
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1998 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.085     0.06486      16.73    < 0.001
+
+            Records used           11
+
+                Deviance      14.0862
+            Pearson Chi2      14.8679      Degrees of freedom      10
+
+
+lrt
+             LR statistic       1.825      Degrees of freedom      1
+                  P value       0.177
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.085
+
+               97.5% lower bound      0.9631
+               97.5% upper bound       1.217
+
+!----------------------------------
+
+
+!--------------1999----------------
+nomodel
+select cyr ==1999 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==1999 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                350            11            0          119
+
+sum Expect@
+
+Using cyr ==1999 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            275.515            11    0.0033150       101.15
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      32.9217
+             1     0      32.9217
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1999 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       4.487    < 0.001
+
+            Records used           11
+
+                Deviance      32.9217
+            Pearson Chi2      41.3292      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      32.9217
+             1     0      14.3882
+             2     0      14.3882
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==1999 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.270      0.0679      18.71    < 0.001
+
+            Records used           11
+
+                Deviance      14.3882
+            Pearson Chi2      16.6826      Degrees of freedom      10
+
+
+lrt
+             LR statistic       18.53      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE       1.27
+
+               97.5% lower bound       1.142
+               97.5% upper bound       1.408
+
+!----------------------------------
+
+
+!--------------2000----------------
+nomodel
+select cyr ==2000 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2000 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                367            11            0          123
+
+sum Expect@
+
+Using cyr ==2000 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            296.074            11   0.00080000       121.32
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      44.2516
+             1     0      44.2516
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2000 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       4.122    < 0.001
+
+            Records used           11
+
+                Deviance      44.2516
+            Pearson Chi2      63.1553      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      44.2516
+             1     0      28.4754
+             2     0      28.4754
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2000 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.240      0.0647      19.16    < 0.001
+
+            Records used           11
+
+                Deviance      28.4754
+            Pearson Chi2      37.2431      Degrees of freedom      10
+
+
+lrt
+             LR statistic       15.78      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE       1.24
+
+               97.5% lower bound       1.117
+               97.5% upper bound       1.371
+
+!----------------------------------
+
+
+!--------------2001----------------
+nomodel
+select cyr ==2001 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2001 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                383            11            0          150
+
+sum Expect@
+
+Using cyr ==2001 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            318.518            11     0.030000       131.48
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      23.5888
+             1     0      23.5888
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2001 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.613    < 0.001
+
+            Records used           11
+
+                Deviance      23.5888
+            Pearson Chi2      28.9322      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      23.5888
+             1     0      11.3362
+             2     0      11.3362
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2001 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.202     0.06144      19.57    < 0.001
+
+            Records used           11
+
+                Deviance      11.3362
+            Pearson Chi2       13.205      Degrees of freedom      10
+
+
+lrt
+             LR statistic       12.25      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.202
+
+               97.5% lower bound       1.086
+               97.5% upper bound       1.327
+
+!----------------------------------
+
+
+!--------------2002----------------
+nomodel
+select cyr ==2002 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2002 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                408            11            0          164
+
+sum Expect@
+
+Using cyr ==2002 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            334.698            11     0.040000       131.88
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      21.1530
+             1     0      21.1530
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2002 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       4.007    < 0.001
+
+            Records used           11
+
+                Deviance       21.153
+            Pearson Chi2      27.8856      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      21.1530
+             1     0      6.15767
+             2     0      6.15767
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2002 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.219     0.06035       20.2    < 0.001
+
+            Records used           11
+
+                Deviance      6.15767
+            Pearson Chi2      9.70621      Degrees of freedom      10
+
+
+lrt
+             LR statistic       15.00      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.219
+
+               97.5% lower bound       1.105
+               97.5% upper bound       1.341
+
+!----------------------------------
+
+!--------------2003----------------
+nomodel
+select cyr ==2003 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2003 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                402            11            0          151
+
+sum Expect@
+
+Using cyr ==2003 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            351.285            11     0.018200       130.12
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      14.6534
+             1     0      14.6534
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2003 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       2.706   0.006812
+
+            Records used           11
+
+                Deviance      14.6534
+            Pearson Chi2      17.0367      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      14.6534
+             1     0      7.66042
+             2     0      7.66042
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2003 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.144     0.05708      20.05    < 0.001
+
+            Records used           11
+
+                Deviance      7.66042
+            Pearson Chi2       8.4892      Degrees of freedom      10
+
+
+lrt
+             LR statistic       6.993      Degrees of freedom      1
+                  P value     0.00818
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.144
+
+               97.5% lower bound       1.036
+               97.5% upper bound        1.26
+
+!----------------------------------
+
+!--------------2004----------------
+nomodel
+select cyr ==2004 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2004 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                412            11            0          140
+
+sum Expect@
+
+Using cyr ==2004 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            371.027            11    0.0037800       132.96
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      18.3950
+             1     0      18.3950
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2004 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       2.127    0.03341
+
+            Records used           11
+
+                Deviance       18.395
+            Pearson Chi2      23.0706      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      18.3950
+             1     0      14.0283
+             2     0      14.0283
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2004 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.110     0.05471       20.3    < 0.001
+
+            Records used           11
+
+                Deviance      14.0283
+            Pearson Chi2      16.7016      Degrees of freedom      10
+
+
+lrt
+             LR statistic       4.367      Degrees of freedom      1
+                  P value      0.0366
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE       1.11
+
+               97.5% lower bound       1.007
+               97.5% upper bound       1.221
+
+!----------------------------------
+
+!--------------2005----------------
+nomodel
+select cyr ==2005 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2005 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                419            11            0          162
+
+sum Expect@
+
+Using cyr ==2005 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            379.277            11    0.0014000       156.07
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      23.9566
+             1     0      23.9566
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2005 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed        2.04    0.04138
+
+            Records used           11
+
+                Deviance      23.9566
+            Pearson Chi2      33.0689      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      23.9566
+             1     0      19.9344
+             2     0      19.9344
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2005 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.105     0.05397      20.47    < 0.001
+
+            Records used           11
+
+                Deviance      19.9344
+            Pearson Chi2      26.1679      Degrees of freedom      10
+
+
+lrt
+             LR statistic       4.022      Degrees of freedom      1
+                  P value      0.0449
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.105
+
+               97.5% lower bound       1.002
+               97.5% upper bound       1.214
+
+!----------------------------------
+
+!--------------2006----------------
+nomodel
+select cyr ==2006 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2006 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                454            11            0          164
+
+sum Expect@
+
+Using cyr ==2006 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            398.483            11     0.020000       171.10
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      23.6436
+             1     0      23.6436
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2006 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       2.781   0.005417
+
+            Records used           11
+
+                Deviance      23.6436
+            Pearson Chi2      28.7888      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      23.6436
+             1     0      16.2449
+             2     0      16.2449
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2006 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.139     0.05347      21.31    < 0.001
+
+            Records used           11
+
+                Deviance      16.2449
+            Pearson Chi2      18.4795      Degrees of freedom      10
+
+
+lrt
+             LR statistic       7.399      Degrees of freedom      1
+                  P value     0.00653
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.139
+
+               97.5% lower bound       1.038
+               97.5% upper bound       1.247
+
+!----------------------------------
+
+!--------------2007----------------
+nomodel
+select cyr ==2007 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2007 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                488            11            0          213
+
+sum Expect@
+
+Using cyr ==2007 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            412.320            11     0.030000       174.15
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      18.3751
+             1     0      18.3751
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2007 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.727    < 0.001
+
+            Records used           11
+
+                Deviance      18.3751
+            Pearson Chi2      19.7094      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      18.3751
+             1     0      5.26383
+             2     0      5.26383
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2007 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.184     0.05358      22.09    < 0.001
+
+            Records used           11
+
+                Deviance      5.26383
+            Pearson Chi2      4.91618      Degrees of freedom      10
+
+
+lrt
+             LR statistic       13.11      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.184
+
+               97.5% lower bound       1.082
+               97.5% upper bound       1.292
+
+!----------------------------------
+
+!--------------2008----------------
+nomodel
+select cyr ==2008 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2008 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                483            11            0          180
+
+sum Expect@
+
+Using cyr ==2008 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            416.914            11     0.026000       172.35
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      31.2929
+             1     0      31.2929
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2008 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.237    0.00121
+
+            Records used           11
+
+                Deviance      31.2929
+            Pearson Chi2      39.6912      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      31.2929
+             1     0      21.3308
+             2     0      21.3308
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2008 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.159     0.05271      21.98    < 0.001
+
+            Records used           11
+
+                Deviance      21.3308
+            Pearson Chi2      25.2183      Degrees of freedom      10
+
+
+lrt
+             LR statistic       9.962      Degrees of freedom      1
+                  P value     0.00160
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.159
+
+               97.5% lower bound       1.058
+               97.5% upper bound       1.265
+
+!----------------------------------
+
+!--------------2009----------------
+nomodel
+select cyr ==2009 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2009 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                479            11            0          168
+
+sum Expect@
+
+Using cyr ==2009 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            431.672            11    0.0053000       163.58
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      14.6931
+             1     0      14.6931
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2009 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       2.278    0.02273
+
+            Records used           11
+
+                Deviance      14.6931
+            Pearson Chi2       17.489      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      14.6931
+             1     0      9.68394
+             2     0      9.68394
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2009 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.110      0.0507      21.89    < 0.001
+
+            Records used           11
+
+                Deviance      9.68394
+            Pearson Chi2      11.0846      Degrees of freedom      10
+
+
+lrt
+             LR statistic       5.009      Degrees of freedom      1
+                  P value      0.0252
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE       1.11
+
+               97.5% lower bound       1.013
+               97.5% upper bound       1.212
+
+!----------------------------------
+!--------------2010----------------
+nomodel
+select cyr ==2010 @
+
+11 records to be used
+
+sum cases@
+
+Using cyr ==2010 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                512            11            0          198
+
+sum Expect@
+
+Using cyr ==2010 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            429.764            11    0.0015448       151.15
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      33.2843
+             1     0      33.2843
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2010 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       3.967    < 0.001
+
+            Records used           11
+
+                Deviance      33.2843
+            Pearson Chi2      37.3232      Degrees of freedom      11
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      33.2843
+             1     0      18.4657
+             2     0      18.4657
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2010 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.191     0.05265      22.63    < 0.001
+
+            Records used           11
+
+                Deviance      18.4657
+            Pearson Chi2      18.1199      Degrees of freedom      10
+
+
+lrt
+             LR statistic       14.82      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.191
+
+               97.5% lower bound       1.091
+               97.5% upper bound       1.298
+
+!----------------------------------
+
+!----------------------------------
+!--------------2011----------------
+nomodel
+select cyr ==2011 @
+
+10 records to be used
+
+sum cases@
+
+Using cyr ==2011 
+
+           Summary for cases
+
+                Sum         Count      Minimum      Maximum
+                536            10            1          236
+
+sum Expect@
+
+Using cyr ==2011 
+
+           Summary for Expect
+
+                Sum         Count      Minimum      Maximum
+            398.437            10      0.34000       151.62
+
+line 0 rate=1@
+fit -%con@
+
+          Iter  Step      Deviance
+
+             0     0      64.4370
+             1     0      64.4370
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2011 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.000       Fixed       6.892    < 0.001
+
+            Records used           10
+
+                Deviance       64.437
+            Pearson Chi2      77.0838      Degrees of freedom      10
+
+
+null
+param 1 free@
+fit@
+
+          Iter  Step      Deviance
+
+             0     0      64.4370
+             1     0      21.6242
+             2     0      21.6242
+
+Piece-wise exponential regression
+Product additive excess model { T0 * ( 1 + T1 + T2 + ...) }
+
+Using cyr ==2011 
+
+    cases is used for cases
+      pyr is used for person years
+
+
+                            Parameter Summary Table
+
+ # Name                            Estimate     Std.Err.  Test Stat.  P value
+-- ----------------------------   ----------   ---------  ----------  --------
+Linear term 0
+ 1 rate.....................          1.345     0.05811      23.15    < 0.001
+
+            Records used           10
+
+                Deviance      21.6242
+            Pearson Chi2      21.9953      Degrees of freedom       9
+
+
+lrt
+             LR statistic       42.81      Degrees of freedom      1
+                  P value     < 0.001
+
+bound 1 @
+
+      Profile likelihood bounds for parameter 1 (rate)
+
+                  MLE      1.345
+
+               97.5% lower bound       1.235
+               97.5% upper bound       1.462
+
+!----------------------------------
+
+
+
+page @
+
+
+
+
+Epicure/AMFIT Version 1.3                                        November 22, 2013
+                                                                 0:02:21 am
+end

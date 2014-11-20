@@ -1,0 +1,4 @@
+c:\users\lovachevss\documents\visual studio 2010\Projects\TestProject\TestProject\bin\Debug\TestProject.exe
+c:\users\lovachevss\documents\visual studio 2010\Projects\TestProject\TestProject\bin\Debug\TestProject.pdb
+c:\users\lovachevss\documents\visual studio 2010\Projects\TestProject\TestProject\obj\x86\Debug\TestProject.exe
+c:\users\lovachevss\documents\visual studio 2010\Projects\TestProject\TestProject\obj\x86\Debug\TestProject.pdb
