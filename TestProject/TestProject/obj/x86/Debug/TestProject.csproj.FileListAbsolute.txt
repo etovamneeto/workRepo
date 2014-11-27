@@ -6,3 +6,8 @@ C:\Users\lovachevss\Desktop\workRepo\TestProject\TestProject\obj\x86\Debug\TestP
 C:\Users\lovachevss\Desktop\workRepo\TestProject\TestProject\obj\x86\Debug\TestProject.pdb
 C:\Users\lovachevss\Desktop\workRepo\TestProject\TestProject\bin\Debug\TestProject.exe
 C:\Users\lovachevss\Desktop\workRepo\TestProject\TestProject\bin\Debug\TestProject.pdb
+C:\Users\lovachev\Desktop\workRepo\TestProject\TestProject\obj\x86\Debug\TestProject.exe
+C:\Users\lovachev\Desktop\workRepo\TestProject\TestProject\obj\x86\Debug\TestProject.pdb
+C:\Users\lovachev\Desktop\workRepo\TestProject\TestProject\bin\Debug\TestProject.exe
+C:\Users\lovachev\Desktop\workRepo\TestProject\TestProject\bin\Debug\TestProject.pdb
+C:\Users\lovachev\Desktop\workRepo\TestProject\TestProject\obj\x86\Debug\TestProject.csprojResolveAssemblyReference.cache
